@@ -29,5 +29,5 @@ Whenever there is a new feature is added to this framwork, there will be medium 
 
 More to follow.....
 
-**If need any help, support, guidance please touch with on linked in
+**If you need any help, support, guidance please touch with on LinkedIn
 https://www.linkedin.com/in/ganeshsirsi/**

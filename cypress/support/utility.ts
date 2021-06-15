@@ -5,10 +5,8 @@ export class Config{
         if(url=='prod')
             return "https:www.example.com";
         else if(url=='qa')
-            return "testurl";
+            return "https://testurl.com";
         else if(url=='stg')
-            return "testurl";
+            return "https://testurl.com";
     }
-   
-
 }

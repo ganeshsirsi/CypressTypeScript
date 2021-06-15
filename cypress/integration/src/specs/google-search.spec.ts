@@ -1,5 +1,4 @@
 import {GoogleSearch} from "../page-objects/google.search.page";
-import {Config} from "../../../support/utility"
 const search = new GoogleSearch();
 
 describe('Google Navigation', () => {

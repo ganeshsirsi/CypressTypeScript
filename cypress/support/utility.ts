@@ -1,5 +1,5 @@
 
-export class Config{
+export class Utility{
     getBaseUrl(){
         let url = Cypress.env('Site');
         if(url=='prod')

@@ -6,7 +6,7 @@ describe('Google Navigation', () => {
     cy.visit('https://www.google.com')
     search.googleSearch().type("Something");
     search.googleSearchBtn().click();
-    search.searchResults().should('be.visible');
-    search.searchFithResult().click();
+    search.searchResults().should('not.be.visible');
+   // search.searchFithResult().click();
     });
 });

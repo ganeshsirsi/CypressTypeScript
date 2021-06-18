@@ -7,19 +7,18 @@
   "devDependencies": {
     "cypress": "^7.3.0",
     "cypress-localstorage-commands": "^1.4.4",
-    "cypress-mochawesome-reporter": "^2.0.1",
+    "cypress-mochawesome-reporter": "^2.2.0",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
+    "junit-report-merger": "^2.2.2",
     "mocha": "^8.4.0",
     "mocha-junit-reporter": "^2.0.0",
-    "mochawesome": "^6.2.2",
-    "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.2.0",
     "typescript": "^4.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "cypress run",
+    "ok": "jrm ./cypress/reports/mergedreport.xml ./cypress/reports/junit/*.xml",
     "delete:reportFolder": "rmdir /Q /S mochawesome-report",
     "merge:reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress-combined-report.json",
     "create:html:report": "npm run merge:reports && marge --reportDir htmlreport cypress-combined-report.json"

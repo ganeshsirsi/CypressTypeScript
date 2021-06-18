@@ -15,17 +15,13 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
+import 'cypress-mochawesome-reporter/register';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 // clearCookie();
 require('cypress-xpath')
-import 'cypress-mochawesome-reporter/register';
-module.exports = (on, config) => {
-    require('cypress-mochawesome-reporter/plugin')(on);
-  }
-  
 //Code to Handle the Sesssion cookie in cypress.
 // afterEach(() => {
 //     //Code to Handle the Sesssion cookie in cypress.
@@ -45,4 +41,18 @@ module.exports = (on, config) => {
 //             }
 //         }
 //     })
+// })
+//const a1 = require('./merge');
+
+// after(()=>{
+//     const path = require('path')
+//     const {mergeFiles} = require('junit-report-merger')
+//     const inputPattern = ['./cypress/reports/junit/results-*.xml']
+//     const outputFile = path.join(__dirname,"./cypress/reports","combined-report.xml")
+//     mergeFiles(outputFile, inputPattern)
+//     console.log('successfully merged')
+// })
+
+// after(()=>{
+    
 // })

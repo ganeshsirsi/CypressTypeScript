@@ -17,7 +17,7 @@ you are all set.
 
 Whenever there is a new feature is added to this framwork, article for that. Follow https://ganeshsirsi.medium.com/ to know more about how to use this framework.
 
-### List of Cypress articles on Medium
+### List of Cypress articles Explains Framework in Detail
  1. [Cypress Test Suite: Grouping and Organizing Tests](https://dzone.com/articles/cypress-test-suite-grouping-and-organizing-tests)
  2. [How To Execute Javascript Commands in Cypress](https://dzone.com/articles/how-to-execute-javascript-commands-in-cypress)
  3. [How to Set up Cypress and Typescript End-to-End Automation Testing](https://dzone.com/articles/cypress-typescript-end-to-end-automation-testing-from-scratch)

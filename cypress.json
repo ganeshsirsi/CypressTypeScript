@@ -1,7 +1,5 @@
 {
-  "env": {
-    "Site": ""
-  },
+  "baseUrl":"https://www.google.com",
   "defaultCommandTimeout": 30000,
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {

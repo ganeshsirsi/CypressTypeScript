@@ -1,4 +1,3 @@
-
 // ***********************************************************
 // This example support/index.js is processed and
 // loaded automatically before your test files.
@@ -17,13 +16,37 @@
 // Import commands.js using ES2015 syntax:
 import './commands';
 import 'cypress-mochawesome-reporter/register';
-
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
-// clearCookie();
 require('cypress-xpath')
-//Code to Handle the Sesssion cookie in cypress.
-// afterEach(() => {
+
+//Continue Tests if Application throws exception
+//Refer : https://docs.cypress.io/api/events/catalog-of-events#Uncaught-Exceptions
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+})
+
+//Creating Test Suties in Cypress
+//Dynamically Pass Environment Variable SUITE
+//Refer : https://dzone.com/articles/cypress-test-suite-grouping-and-organizing-tests
+beforeEach(function() {
+    let testSuite = Cypress.env('SUITE');
+    if (!testSuite) {
+      return;
+    }
+    
+    const testName = Cypress.mocha.getRunner().test.fullTitle();
+    testSuite = "<"+testSuite+">"
+    if (!testName.includes(testSuite)) {
+      this.skip();
+    }
+  })
+
+// Uncomment Below code to Preserve Cookies in Tests
+// This code preserves all the cookies
+//Refer : https://ganeshsirsi.medium.com/cypress-how-to-preserve-cookies-and-keep-login-session-active-in-each-test-simplest-way-717bbc11adf7
+
+//   afterEach(() => {
 //     //Code to Handle the Sesssion cookie in cypress.
 //     //Keep the Session alive when you jump to another test
 //     let str= [];
@@ -41,18 +64,4 @@ require('cypress-xpath')
 //             }
 //         }
 //     })
-// })
-//const a1 = require('./merge');
-
-// after(()=>{
-//     const path = require('path')
-//     const {mergeFiles} = require('junit-report-merger')
-//     const inputPattern = ['./cypress/reports/junit/results-*.xml']
-//     const outputFile = path.join(__dirname,"./cypress/reports","combined-report.xml")
-//     mergeFiles(outputFile, inputPattern)
-//     console.log('successfully merged')
-// })
-
-// after(()=>{
-    
 // })

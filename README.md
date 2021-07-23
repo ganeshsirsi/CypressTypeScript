@@ -1,5 +1,5 @@
-# Cypress Typescript End to End Automation Framework
 
+# Cypress Typescript End to End Automation Framework
 This framework was built with intension anyone who wants to integrate typescript and cypress framework in their organization it should be easy for them.
 
 ### Installation Prcess
@@ -8,15 +8,22 @@ This framework was built with intension anyone who wants to integrate typescript
 you are all set.
 
 ### Features of this Framework
-- Typescript Integration
+- Cypress Typescript Integration
 - Environment Configured 
 - Mocha HTML Results ready
-- Ready to use framework
+- JUnit XML Results Ready
+- Test Suite Configured
 
 
-Whenever there is a new feature is added to this framwork, there will be medium article for that. Follow https://ganeshsirsi.medium.com/ to know more about how to use this framework.
+Whenever there is a new feature is added to this framwork, article for that. Follow https://ganeshsirsi.medium.com/ to know more about how to use this framework.
 
 ### List of Cypress articles on Medium
+ 1. [Cypress Test Suite: Grouping and Organizing Tests](https://dzone.com/articles/cypress-test-suite-grouping-and-organizing-tests)
+ 2. [How To Execute Javascript Commands in Cypress](https://dzone.com/articles/how-to-execute-javascript-commands-in-cypress)
+ 3. [How to Set up Cypress and Typescript End-to-End Automation Testing](https://dzone.com/articles/cypress-typescript-end-to-end-automation-testing-from-scratch)
+ 4. [7 Easy Steps to Generate Both XML and HTML Reports in Cypress](https://dzone.com/articles/7-easy-steps-to-generate-xml-and-html-reports-in-cypress)
+ 5. [How to Generate HTML Reports With Screenshots in Cypress](https://dzone.com/articles/cypress-generate-html-results-with-screenshot)
+
 1. [Cypress how to preserve cookies and keep login session active in each test/across the tests simplest way](https://ganeshsirsi.medium.com/cypress-how-to-preserve-cookies-and-keep-login-session-active-in-each-test-simplest-way-717bbc11adf7 "Cypress how to preserve cookies and keep login session active in each test/across the tests simplest way")
 
 2. [Protractor end of life or support what next Future of Angular E2E Can Cypress replace the protractor What are alternative tools to the protractor](https://ganeshsirsi.medium.com/protractor-end-of-life-what-next-can-cypress-replace-the-protractor-3c58c0ecbb1c "Protractor end of life or support what next Future of Angular E2E Can Cypress replace the protractor What are alternative tools to the protractor")
@@ -27,7 +34,6 @@ Whenever there is a new feature is added to this framwork, there will be medium 
 
 5. [How to execute javascript commands in cypress](https://ganeshsirsi.medium.com/how-to-execute-javascript-commands-in-cypress-2154897b1b23 "How to execute javascript commands in cypress")
 
-More to follow.....
 
 **If you need any help, support, guidance please touch with on LinkedIn
 https://www.linkedin.com/in/ganeshsirsi/**

@@ -1,4 +1,4 @@
-# Cypress Typescript End to End Automation FrameworkCypress Typescript End to End Automation Framework
+# Cypress Typescript End to End Automation Framework
 
 This framework was built with intension anyone who wants to integrate typescript and cypress framework in their organization it should be easy for them.
 
